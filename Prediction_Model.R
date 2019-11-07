@@ -1,4 +1,4 @@
-
+#Data was taken from https://finance.yahoo.com/
 data<-read.csv("Desktop/GSPC2019.csv")
 data$logreturn<-0
 data$logreturn<-c(NA,diff(log(data$Adj.Close)))
